@@ -1,2 +1,3 @@
-import ShoppingCartPage from "./shoppingCart-container";
+import ShoppingCartPage from './shoppingCart-container';
+
 export default ShoppingCartPage;

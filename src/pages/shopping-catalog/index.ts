@@ -1,2 +1,3 @@
-import ShoppingCatalogPage from "./shoppingCatalog-container";
+import ShoppingCatalogPage from './shoppingCatalog-container';
+
 export default ShoppingCatalogPage;
