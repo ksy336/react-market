@@ -1,0 +1,101 @@
+.card-content {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px 22px 32px 22px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+/*.card-content:active {*/
+/*    transform: scale(0.9)*/
+/*}*/
+.card-content:nth-child(3),
+.card-content:nth-child(6),
+.card-content:nth-child(9),
+.card-content:nth-child(12) {
+    margin-right: 0;
+}
+.card-content:nth-child(4),
+.card-content:nth-child(5),
+.card-content:nth-child(6) {
+    margin-bottom: 0;
+}
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-image img {
+    width: 220px;
+    height: 237px;
+    text-align: center;
+}
+.title {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1C1C27;
+}
+.price span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFA542;
+}
+.rate {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+.rate img {
+    display: inline-block;
+    margin-right: 10px;
+}
+.old-price {
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    /*align-items: flex-start;*/
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #FFCE7F;
+    position: absolute;
+    top: 330px;
+    right: 25px;
+}
+
+.buy-click {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    cursor: pointer;
+    user-select: none;
+}
+.buy-button:active {
+    transform: scale(0.9);
+}
+.buy-button {
+    margin-left: 180px;
+}

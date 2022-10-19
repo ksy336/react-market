@@ -1,0 +1,48 @@
+import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import CartContext from '../../store/cartContext';
+import logo from '../../assets/images/QPICK.svg';
+import heart from '../../assets/images/heart.svg';
+import cart from '../../assets/images/cart.svg';
+import './Header.css';
+
+const Header = () => {
+  const cartCtx = useContext(CartContext);
+  const numberOfItems = cartCtx.items.length;
+  const navigate = useNavigate();
+  const goToCartPage = () => {
+    navigate('/cart', { replace: true });
+  };
+  const handleClick = () => {
+    navigate('/', { replace: true });
+  };
+
+  return (
+    <header>
+      <div className="wrapper header-wrapper">
+        <div className="header-logo" onClick={handleClick}>
+          <img src={logo} alt="it is logo" />
+        </div>
+        <nav className="nav">
+          <div className="heart-block">
+            <span>
+              <img src={heart} alt="it is heart icon" />
+            </span>
+            <span className="heart-container">
+              <span className="heart-number">0</span>
+            </span>
+          </div>
+          <div className="cart-block" onClick={goToCartPage}>
+            <span>
+              <img src={cart} alt="it is shopping cart icon" />
+            </span>
+            <span className="cart-container">
+              <span className="cart-number">{numberOfItems}</span>
+            </span>
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+};
+export default Header;
