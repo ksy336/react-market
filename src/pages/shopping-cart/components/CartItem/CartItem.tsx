@@ -1,16 +1,19 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { IHeadPhone } from '../../../shopping-catalog/components/Cards/Cards-types';
+import deleteIcon from '../../../../assets/images/delete.svg';
+import plusIcon from '../../../../assets/images/minus.png';
+import minusIcon from '../../../../assets/images/plus.png';
+import { removeTotalAmount, removeItem } from '../../../../store/cartSlice';
+import { useDispatch } from 'react-redux';
 import './CartItem.css';
-import { IHeadPhone } from '../Cards/Cards-types';
-import deleteIcon from '../../assets/images/delete.svg';
-import plusIcon from '../../assets/images/minus.png';
-import minusIcon from '../../assets/images/plus.png';
-import CartContext from '../../store/cartContext';
 
 const CartItem = ({ id, img, title, price, rate }: IHeadPhone) => {
-  const cartCtx = useContext(CartContext);
-
+  // const cartCtx = useContext(CartContext);
+  const dispatch = useDispatch();
   const deleteHandler = () => {
-    cartCtx.removeItem(id);
+    // cartCtx.removeItem(id);
+    dispatch(removeItem(id));
+    dispatch(removeTotalAmount(price));
   };
   return (
     <>

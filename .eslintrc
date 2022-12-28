@@ -33,7 +33,12 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
+        "trailingComma": "es5",
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "printWidth": 160,
+        "arrowParens": "always"
       }
     ],
     "@typescript-eslint/interface-name-prefix": "off",

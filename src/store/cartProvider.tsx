@@ -1,6 +1,6 @@
 import { useReducer } from 'react';
 import CartContext from './cartContext';
-import { IHeadphones } from '../components/Cards/Cards-types';
+import { IHeadphones } from '../pages/shopping-catalog/components/Cards/Cards-types';
 
 export interface ICart {
   items: [];

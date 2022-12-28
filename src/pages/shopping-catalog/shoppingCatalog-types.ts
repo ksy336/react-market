@@ -9,3 +9,5 @@ export interface IHeadPhone {
 export interface IHeadphones {
     headphones: IHeadPhone[]
 }
+
+export type Headphones = IHeadphones['headphones']

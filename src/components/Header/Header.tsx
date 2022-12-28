@@ -1,15 +1,17 @@
-import { useContext } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import CartContext from '../../store/cartContext';
 import logo from '../../assets/images/QPICK.svg';
 import heart from '../../assets/images/heart.svg';
 import cart from '../../assets/images/cart.svg';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/types';
 import './Header.css';
 
 const Header = () => {
-  const cartCtx = useContext(CartContext);
-  const numberOfItems = cartCtx.items.length;
+  // const cartCtx = useContext(CartContext);
   const navigate = useNavigate();
+  const items = useSelector((state: RootState) => state.cart.items);
+  const numberOfItems = items.length;
   const goToCartPage = () => {
     navigate('/cart', { replace: true });
   };

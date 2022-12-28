@@ -1,15 +1,21 @@
-import { useCallback, useContext } from 'react';
-import CartContext from '../../store/cartContext';
-import star from '../../assets/images/Vector.svg';
+import React from 'react';
+import star from '../../../../assets/images/Vector.svg';
 import { IHeadPhone } from '../Cards/Cards-types';
+import { useDispatch } from 'react-redux';
+import { addItems, updateTotalAmount } from '../../../../store/cartSlice';
 import './Card.css';
 
 const Card = ({ id, price, img, rate, title }: IHeadPhone) => {
-  const cartCtx = useContext(CartContext);
+  // const cartCtx = useContext(CartContext);
+  // const addItem = () => {
+  //   cartCtx.addItem({id: id, price: price, img: img, rate: rate, title: title});
+  // };
+  const dispatch = useDispatch();
   const addItem = () => {
-    cartCtx.addItem({ id: id, price: price, img: img, rate: rate, title: title });
+    dispatch(addItems({ id, price, img, rate, title }));
+    dispatch(updateTotalAmount(price));
   };
-  console.log(cartCtx.items);
+  // console.log(cartCtx.items);
   return (
     <>
       <div className="card-content">
