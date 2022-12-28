@@ -8,4 +8,5 @@ import { IHeadPhone } from '../pages/shopping-catalog/shoppingCatalog-types';
 export interface CartState {
   items: IHeadPhone[];
   totalAmount: number;
+  singleItem: IHeadPhone[];
 }

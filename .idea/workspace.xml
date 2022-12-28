@@ -2,41 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17c625c0-ee33-4a09-935a-6e93516e5a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/custom.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/cartSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BreadCrumbs/BreadCrumbs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/message-error.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/notification.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/single-cart/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/single-cart/singleCart-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/single-cart/singleCart-view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/single-cart/singleCart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/Cards-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/Cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/Cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nofound/nofound-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nofound/nofound-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/nofound/nofound-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nofound/nofound-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cartContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cartContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cartProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cartProvider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cartContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cartProvider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cartSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -61,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -104,7 +99,8 @@
       <option name="presentableId" value="Default" />
       <updated>1672214006527</updated>
       <workItem from="1672214007783" duration="6870000" />
-      <workItem from="1672220944349" duration="5745000" />
+      <workItem from="1672220944349" duration="8338000" />
+      <workItem from="1672229314630" duration="3637000" />
     </task>
     <servers />
   </component>
@@ -120,22 +116,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="80" key="#TypeScript/0.0.1536.824@0.0.1536.824" timestamp="1672226696542" />
-    <state width="1515" height="166" key="GridCell.Tab.0.bottom" timestamp="1672226628422">
+    <state width="1515" height="166" key="GridCell.Tab.0.bottom" timestamp="1672231340137">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672226628422" />
-    <state width="1515" height="166" key="GridCell.Tab.0.center" timestamp="1672226628422">
+    <state width="1515" height="166" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
+    <state width="1515" height="166" key="GridCell.Tab.0.center" timestamp="1672231340137">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1672226628422" />
-    <state width="1515" height="166" key="GridCell.Tab.0.left" timestamp="1672226628422">
+    <state width="1515" height="166" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
+    <state width="1515" height="166" key="GridCell.Tab.0.left" timestamp="1672231340137">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1672226628422" />
-    <state width="1515" height="166" key="GridCell.Tab.0.right" timestamp="1672226628422">
+    <state width="1515" height="166" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
+    <state width="1515" height="166" key="GridCell.Tab.0.right" timestamp="1672231340137">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1672226628422" />
+    <state width="1515" height="166" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1672224268143">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

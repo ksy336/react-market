@@ -1,24 +1,32 @@
-import React from 'react';
+import * as React from 'react';
 import star from '../../../../assets/images/Vector.svg';
 import { IHeadPhone } from '../Cards/Cards-types';
 import { useDispatch } from 'react-redux';
-import { addItems, updateTotalAmount } from '../../../../store/cartSlice';
+import { useNavigate } from 'react-router-dom';
+import { addItems, updateTotalAmount, getSingleCartItem } from '../../../../store/cartSlice';
+import openNotification from '../../../../helpers/notification';
 import './Card.css';
 
 const Card = ({ id, price, img, rate, title }: IHeadPhone) => {
-  // const cartCtx = useContext(CartContext);
-  // const addItem = () => {
-  //   cartCtx.addItem({id: id, price: price, img: img, rate: rate, title: title});
-  // };
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const addItem = () => {
     dispatch(addItems({ id, price, img, rate, title }));
     dispatch(updateTotalAmount(price));
+    try {
+      openNotification('bottomRight', 'success', 'Товар добавлен в корзину');
+    } catch (e) {
+      openNotification('bottomRight', 'error', 'Произошла ошибка! Попробуйте снова');
+    }
   };
-  // console.log(cartCtx.items);
+  const getSingleCart = () => {
+    localStorage.setItem('cartId', String(id));
+    dispatch(getSingleCartItem({ id, price, img, rate, title }));
+    navigate('/single-cart', { replace: true });
+  };
   return (
     <>
-      <div className="card-content">
+      <div className="card-content" onClick={getSingleCart}>
         <div className="card-image">
           <img src={`${img}`} alt="it is a headphones image" />
         </div>

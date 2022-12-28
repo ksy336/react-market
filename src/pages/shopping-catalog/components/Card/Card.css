@@ -2,7 +2,7 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
     margin-bottom: 30px;
     padding: 15px 22px 32px 22px;
     display: flex;
@@ -23,6 +23,14 @@
 .card-content:nth-child(5),
 .card-content:nth-child(6) {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1025px) {
+    .card-content:nth-child(4),
+    .card-content:nth-child(5),
+    .card-content:nth-child(6) {
+        margin-bottom: 30px;
+    }
 }
 .card-image {
     display: flex;

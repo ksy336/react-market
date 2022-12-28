@@ -4,6 +4,7 @@ import { CartState } from './types';
 const initialState: CartState = {
   items: [],
   totalAmount: 0,
+  singleItem: [],
 };
 const cartSlice = createSlice({
   name: 'cart',
@@ -24,10 +25,13 @@ const cartSlice = createSlice({
       }
       state.totalAmount = state.totalAmount - action.payload;
     },
+    getSingleCartItem(state, action) {
+      state.singleItem = [action.payload];
+    },
   },
 });
 
-export const { addItems, updateTotalAmount, removeItem, removeTotalAmount } = cartSlice.actions;
+export const { addItems, updateTotalAmount, removeItem, removeTotalAmount, getSingleCartItem } = cartSlice.actions;
 
 
 export default cartSlice.reducer;

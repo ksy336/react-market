@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { IHeadPhone } from '../../../shopping-catalog/components/Cards/Cards-types';
 import deleteIcon from '../../../../assets/images/delete.svg';
 import plusIcon from '../../../../assets/images/minus.png';

@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { IProps } from './types';
 import Button from '../../components/Button/Button';
 

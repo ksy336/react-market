@@ -21,6 +21,8 @@
     }
   },
   "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "comma-dangle": [
@@ -38,7 +40,8 @@
         "singleQuote": true,
         "tabWidth": 2,
         "printWidth": 160,
-        "arrowParens": "always"
+        "arrowParens": "always",
+        "endOfLine":"auto"
       }
     ],
     "@typescript-eslint/interface-name-prefix": "off",
@@ -46,9 +49,7 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-var-reqiures": "off",
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "@typescript-eslint/no-var-reqiures": "off"
   },
   "settings": {
     "react": {

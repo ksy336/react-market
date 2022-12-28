@@ -16,6 +16,8 @@ header {
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 30px;
 }
 .header-logo {
     cursor: pointer;

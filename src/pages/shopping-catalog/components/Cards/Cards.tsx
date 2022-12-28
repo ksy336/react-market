@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { IHeadphones, IHeadPhone } from './Cards-types';
 import Card from '../Card/Card';
 import './Cards.css';

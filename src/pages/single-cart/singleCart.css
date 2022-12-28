@@ -1,0 +1,31 @@
+.main-info {
+    padding-top: 100px;
+}
+.main-info-blocks {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-about-headphones {
+    margin-left: 30px;
+}
+.info-about-headphones p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1025px) {
+    .main-info-blocks {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .info-about-headphones {
+        margin-left: 0px;
+    }
+}

@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 const Button = (props: any) => {
   return (
     <button onClick={props.onClick} type={props.type || 'button'} className={`button ${props.disabled && 'disabled'}`}>

@@ -1,13 +1,26 @@
+footer {
+    padding-top: 100px;
+}
 .footer {
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px 30px 0px 0px;
     padding: 29px 27px 32px 29px;
+
 }
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+@media screen and (max-width: 1025px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+}
+.nav-list {
+    margin-top: 0;
 }
 .links {
     font-family: 'Montserrat', sans-serif;
@@ -57,4 +70,15 @@
 .icons-social span:hover {
     transform: scale(0.9);
 
+}
+@media screen and (max-width: 1025px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .nav-list {
+        margin-top: 20px;
+    }
+    .icons-social {
+        margin-top: 20px;
+    }
 }
