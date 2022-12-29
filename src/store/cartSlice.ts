@@ -12,6 +12,7 @@ const cartSlice = createSlice({
   reducers: {
     addItems(state, action) {
       state.items = state.items.concat(action.payload);
+      // state.items = action.payload;
     },
     updateTotalAmount(state, action) {
       state.totalAmount = state.totalAmount + Number(action.payload);

@@ -1,19 +1,22 @@
 import * as React from 'react';
-import { IHeadPhone } from '../../../shopping-catalog/components/Cards/Cards-types';
 import deleteIcon from '../../../../assets/images/delete.svg';
 import plusIcon from '../../../../assets/images/minus.png';
 import minusIcon from '../../../../assets/images/plus.png';
 import { removeTotalAmount, removeItem } from '../../../../store/cartSlice';
 import { useDispatch } from 'react-redux';
 import './CartItem.css';
+import {IHeadPhone} from "../../../shopping-catalog/shoppingCatalog-types";
 
-const CartItem = ({ id, img, title, price, rate }: IHeadPhone) => {
-  // const cartCtx = useContext(CartContext);
+const CartItem = ({ id, img, title, price, cartItems, amount }: any) => {
+  console.log(cartItems)
   const dispatch = useDispatch();
   const deleteHandler = () => {
-    // cartCtx.removeItem(id);
-    dispatch(removeItem(id));
-    dispatch(removeTotalAmount(price));
+    // dispatch(removeItem(id));
+    console.log("hello")
+    cartItems= cartItems.filter((item: IHeadPhone) => item.id !== id);
+    console.log(cartItems);
+    // dispatch(removeTotalAmount(price));
+    // state.totalAmount = state.totalAmount - action.payload;
   };
   return (
     <>

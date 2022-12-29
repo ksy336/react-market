@@ -4,9 +4,9 @@ import data from '../../headphones.json';
 import { useState } from 'react';
 import './shoppingCatalog.css';
 
-const ShoppingCatalogContainer = () => {
-  const [headphones] = useState(data);
 
-  return <ShoppingCatalogView headphones={headphones} />;
+const ShoppingCatalogContainer = ({itemsToLocalStorage, setItemsToLocalStorage, totalAmount, setTotalAmount}: any) => {
+  const [headphones] = useState(data);
+  return <ShoppingCatalogView totalAmount={totalAmount} setTotalAmount={setTotalAmount}  itemsToLocalStorage={itemsToLocalStorage} setItemsToLocalStorage={setItemsToLocalStorage}  headphones={headphones} />;
 };
 export default ShoppingCatalogContainer;

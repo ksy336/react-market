@@ -3,15 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/QPICK.svg';
 import heart from '../../assets/images/heart.svg';
 import cart from '../../assets/images/cart.svg';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../store/types';
 import './Header.css';
 
-const Header = () => {
-  // const cartCtx = useContext(CartContext);
+const Header = ({itemsToLocalStorage}: any) => {
   const navigate = useNavigate();
-  const items = useSelector((state: RootState) => state.cart.items);
-  const numberOfItems = items.length;
+  const numberOfItems = itemsToLocalStorage.length;
+  console.log(itemsToLocalStorage)
   const goToCartPage = () => {
     navigate('/cart', { replace: true });
   };

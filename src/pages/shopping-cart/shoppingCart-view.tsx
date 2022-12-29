@@ -4,17 +4,19 @@ import Footer from '../../components/Footer/Footer';
 import { IHeadPhone } from '../shopping-catalog/components/Cards/Cards-types';
 import CartItem from './components/CartItem/CartItem';
 import './shoppingCart.css';
+import BreadCrumbs from "../../components/BreadCrumbs/BreadCrumbs";
 
 const ShoppingCartView = ({ cartItems, amount }: any) => {
   return (
     <>
-      <Header />
+      <Header itemsToLocalStorage={cartItems} />
+      <BreadCrumbs />
       <div className="cart-shop-container wrapper">
         <span className="cart-heading">Корзина</span>
         <div className="cart-shop-content">
           <div className="cards-item-content">
             {cartItems?.map((item: IHeadPhone) => {
-              return <CartItem key={item.id} id={item.id} img={item.img} title={item.title} price={item.price} rate={item.rate} />;
+              return <CartItem key={item.id} id={item.id} img={item.img} title={item.title} price={item.price} rate={item.rate} cartItems={cartItems} amount={amount} />;
             })}
           </div>
           <div className="button-block">
