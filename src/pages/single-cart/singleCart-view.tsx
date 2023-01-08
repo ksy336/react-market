@@ -7,27 +7,33 @@ import { RootState } from '../../store/types';
 import { IHeadPhone } from '../shopping-catalog/shoppingCatalog-types';
 import Card from '../shopping-catalog/components/Card/Card';
 
-const SingleCartView = ({itemsToLocalStorage, setItemsToLocalStorage}: any) => {
+const SingleCartView = ({ itemsToLocalStorage, setItemsToLocalStorage, t }: any) => {
   const singleCartItem = useSelector((state: RootState) => state.cart.singleItem);
   return (
     <>
       <Header itemsToLocalStorage={itemsToLocalStorage} />
       <div className="main-info">
         <BreadCrumbs />
-        <div className="main-info-blocks">
+        <div className="main-info-blocks wrapper">
           {singleCartItem?.map((item: IHeadPhone) => (
-            <Card id={item.id} key={item.id} img={item?.img} title={item?.title} price={item?.price} rate={item?.rate} setItemsToLocalStorage={setItemsToLocalStorage} />
+            <Card
+              id={item.id}
+              key={item.id}
+              img={item?.img}
+              title={item?.title}
+              price={item?.price}
+              rate={item?.rate}
+              setItemsToLocalStorage={setItemsToLocalStorage}
+            />
           ))}
           <div className="info-about-headphones">
-            <p>Наушники — это активное шумоподавление для иммерсивного звука и комфорт от использования целый день.
-              Прозрачный режим, в котором слышно окружающий мир.
-              Защита от пота и воды. Мягкие вкладыши трёх размеров в комплекте для индивидуальной фиксации наушников.</p>
-              <ul>Основные характеристики:</ul>
-              <li>Функция активного шумоподавления блокирует внешние шумы, чтобы вы могли полностью погрузиться в музыку</li>
-              <li>Прозрачный режим позволяет слышать окружающий мир</li>
-              <li>Технология пространственного аудио с функцией динамического отслеживания движений головы создаёт по‑настоящему живую и объёмную картину звука</li>
-              <li>Адаптивный эквалайзер автоматически подстраивает звучание персонально под вас</li>
-              <li>Мягкие силиконовые вкладыши с конической полостью; три размера на выбор</li>
+            <p>{t('headphonesText')}</p>
+            <ul>{t('mainCharacteristics')}</ul>
+            <li>{t('music')}</li>
+            <li>{t('transparent')}</li>
+            <li>{t('technology')}</li>
+            <li>{t('adaptive')}</li>
+            <li>{t('eartips')}</li>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 {
-  "name": "neoflex-test",
+  "name": "market-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,22 +9,25 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.65",
-    "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "antd": "^5.0.1",
+    "i18next": "^22.4.9",
+    "react-i18next": "^11.16.9",
+    "react-cookie": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.5",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "typescript": "^4.8.4",
-    "web-vitals": "^2.1.4",
-    "antd": "^5.0.1"
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@types/react": "^18.0.26",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint": "^8.16.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^4.0.0",

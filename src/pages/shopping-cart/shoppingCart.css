@@ -7,6 +7,11 @@
     justify-content: space-between;
     margin-bottom: 200px;
 }
+@media screen and (max-width: 1024px) {
+    .cart-shop-content {
+       flex-direction: column;
+    }
+}
 .cart-heading {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -40,7 +45,7 @@
     line-height: 18px;
     color: #000000;
 }
-button {
+.button {
     width: 348px;
     height: 65px;
     left: 926.02px;
@@ -57,4 +62,32 @@ button {
     line-height: 21px;
     text-align: center;
     cursor: pointer;
+}
+.form-category {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.form-category >* {
+    padding-bottom: 10px;
+}
+.buttons-for-submit {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button-category-submit {
+    margin-right: 20px;
+}
+.header-category {
+    padding: 30px;
+    font-size: 20px;
+}
+.text-invalid {
+    color:red;
+    font-size: 1rem;
+}
+.input-for-name,
+.input-for-phone {
+    margin-bottom: 20px;
 }

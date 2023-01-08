@@ -2,20 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17c625c0-ee33-4a09-935a-6e93516e5a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useLocalStorage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SwitchLanguage/Switch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SwitchLanguage/SwitchLang.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/locales/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n/locales/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BreadCrumbs/BreadCrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BreadCrumbs/BreadCrumbs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headphones.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/headphones.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useLocalStorage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useLocalStorage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards-types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/single-cart/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/single-cart/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/single-cart/singleCart-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/single-cart/singleCart-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/single-cart/singleCart-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/single-cart/singleCart-view.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/cartSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +68,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -55,12 +82,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\market-react\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\market-react\src\pages\shopping-cart\components" />
       <recent name="C:\Users\user\Desktop\market-react\src\pages\shopping-catalog\components" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.fix">
     <configuration name="fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -71,9 +101,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.fix" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +128,8 @@
       <updated>1672214006527</updated>
       <workItem from="1672214007783" duration="6870000" />
       <workItem from="1672220944349" duration="8338000" />
-      <workItem from="1672229314630" duration="14393000" />
+      <workItem from="1672229314630" duration="25634000" />
+      <workItem from="1672823011219" duration="18992000" />
     </task>
     <servers />
   </component>
@@ -103,25 +145,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="80" key="#TypeScript/0.0.1536.824@0.0.1536.824" timestamp="1672226696542" />
-    <state width="1515" height="166" key="GridCell.Tab.0.bottom" timestamp="1672231340137">
+    <state width="1515" height="221" key="GridCell.Tab.0.bottom" timestamp="1673202851325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
-    <state width="1515" height="166" key="GridCell.Tab.0.center" timestamp="1672231340137">
+    <state width="1515" height="221" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1673202851325" />
+    <state width="1515" height="221" key="GridCell.Tab.0.center" timestamp="1673202851325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
-    <state width="1515" height="166" key="GridCell.Tab.0.left" timestamp="1672231340137">
+    <state width="1515" height="221" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1673202851325" />
+    <state width="1515" height="221" key="GridCell.Tab.0.left" timestamp="1673202851325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
-    <state width="1515" height="166" key="GridCell.Tab.0.right" timestamp="1672231340137">
+    <state width="1515" height="221" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1673202851325" />
+    <state width="1515" height="221" key="GridCell.Tab.0.right" timestamp="1673202851325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="166" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1672231340137" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1672325253505">
+    <state width="1515" height="221" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1673202851325" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1672401460450">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1672325253505" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1672401460450" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1673204234564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1673204234563" />
   </component>
 </project>

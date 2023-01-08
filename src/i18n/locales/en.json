@@ -1,0 +1,30 @@
+{
+  "ordering": "Ordering",
+  "buy": "Buy",
+  "headphones": "Headphones",
+  "ru": "ru",
+  "en": "en",
+  "pro-head": "Wireless headphones",
+  "favorites": "Favorites",
+  "cart": "Shopping cart",
+  "contacts": "Contacts",
+  "terms": "Terms of Service",
+  "delivery": "Recipient",
+  "name": "Name",
+  "phone": "Phone",
+  "order": "Create order",
+  "cancel": "Cancel",
+  "total": "TOTAL",
+  "checkout": "Go to checkout",
+  "headphonesText": "The headphones are active noise canceling for immersive sound and all-day comfort. Transparent mode, in which you can hear the surroundings\n              peace. Sweat and water resistant. Three sizes of soft earbuds are included for custom fit.",
+  "mainCharacteristics": "Main characteristics:",
+  "music": "Active noise canceling blocks outside noise so you can fully immerse yourself in your music",
+  "transparent": "Transparent mode allows you to hear the world around you",
+  "technology": "Spatial audio technology with dynamic head tracking creates a truly vibrant and immersive sound experience",
+  "adaptive": "Adaptive EQ automatically adjusts the sound to suit you",
+  "eartips": "\nSoft silicone eartips with conical cavity; three sizes to choose from",
+  "catalog": "Catalog",
+  "product": "Product"
+}
+
+

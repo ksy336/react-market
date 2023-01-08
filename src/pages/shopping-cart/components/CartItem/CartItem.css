@@ -24,6 +24,10 @@
     cursor: pointer;
     margin-left: 20px;
 }
+.plus img:active,
+.minus img:active {
+    transform: scale(0.9);
+}
 .amount .plus,
 .amount .amount-number {
     margin-right: 23px;

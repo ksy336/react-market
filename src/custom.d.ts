@@ -3,3 +3,4 @@ declare module '*.jpg';
 declare module '*.png';
 declare module 'antd';
 declare module '*.json';
+declare module '*.react-dom';

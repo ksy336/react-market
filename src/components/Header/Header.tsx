@@ -5,10 +5,9 @@ import heart from '../../assets/images/heart.svg';
 import cart from '../../assets/images/cart.svg';
 import './Header.css';
 
-const Header = ({itemsToLocalStorage}: any) => {
+const Header = ({ itemsToLocalStorage }: any) => {
   const navigate = useNavigate();
   const numberOfItems = itemsToLocalStorage.length;
-  console.log(itemsToLocalStorage)
   const goToCartPage = () => {
     navigate('/cart', { replace: true });
   };
@@ -17,7 +16,7 @@ const Header = ({itemsToLocalStorage}: any) => {
   };
 
   return (
-    <header>
+    <header className="header-header-first">
       <div className="wrapper header-wrapper">
         <div className="header-logo" onClick={handleClick}>
           <img src={logo} alt="it is logo" />

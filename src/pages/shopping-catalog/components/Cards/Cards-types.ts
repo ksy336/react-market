@@ -3,7 +3,8 @@ export interface IHeadPhone {
     img: string,
     title: string,
     price: string,
-    rate: string
+    rate: string,
+    count: string
 }
 
 export interface IHeadphones {
