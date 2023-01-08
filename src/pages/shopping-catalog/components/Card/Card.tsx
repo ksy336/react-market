@@ -6,7 +6,7 @@ import { addItems, updateTotalAmount, getSingleCartItem } from '../../../../stor
 import openNotification from '../../../../helpers/notification';
 import './Card.css';
 import { useTranslation } from 'react-i18next';
-import CartItem from "../../../shopping-cart/components/CartItem/CartItem";
+import CartItem from '../../../shopping-cart/components/CartItem/CartItem';
 
 const Card = ({ id, price, img, rate, title, count, setItemsToLocalStorage, totalAmount, setTotalAmount }: any) => {
   const navigate = useNavigate();

@@ -44,18 +44,18 @@ const CartItem = ({
     setTotalAmount(amount - Number(price));
   };
   const plusItemHandler = () => {
-     setNumberOfItems(numberOfItems + 1)
-      // // // return ++prev
-      // // if (id === id) {
-      // //   return ++prev
-      // // }
-      // // return prev
-      // cartItems?.map((product: any) => {
-      //   if(product.id === id) {
-      //     return ++prev;
-      //   }
-      //   return product
-      // })
+    setNumberOfItems(numberOfItems + 1);
+    // // // return ++prev
+    // // if (id === id) {
+    // //   return ++prev
+    // // }
+    // // return prev
+    // cartItems?.map((product: any) => {
+    //   if(product.id === id) {
+    //     return ++prev;
+    //   }
+    //   return product
+    // })
     setNumberOfItems(numberOfItems + 1);
     setTotalAmount(amount + Number(price));
   };

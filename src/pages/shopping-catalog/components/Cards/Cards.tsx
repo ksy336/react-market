@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IHeadPhone } from './Cards-types';
 import Card from '../Card/Card';
 import './Cards.css';
-import CartItem from "../../../shopping-cart/components/CartItem/CartItem";
+import CartItem from '../../../shopping-cart/components/CartItem/CartItem';
 
 const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount, t }: any) => {
   return (
