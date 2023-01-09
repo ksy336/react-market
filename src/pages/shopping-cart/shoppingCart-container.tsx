@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import {useEffect, useState} from "react";
 import ShoppingCartView from './shoppingCart-view';
 import { useForm } from 'react-hook-form';
 import openNotification from '../../helpers/notification';
@@ -28,9 +28,7 @@ const ShoppingCartContainer = ({
   const hideModalHandler = () => {
     setShowModal(false);
   };
-  const showModalHandler = () => {
-    setShowModal(true);
-  };
+
   const formSubmit = () => {
     try {
       reset();
@@ -39,6 +37,9 @@ const ShoppingCartContainer = ({
     } catch (e) {
       openNotification('topRight', 'error', 'Произошла ошибка. Повторите снова.');
     }
+  };
+  const showModalHandler = () => {
+    setShowModal(true);
   };
   return (
     <ShoppingCartView

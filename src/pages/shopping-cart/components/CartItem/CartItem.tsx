@@ -3,9 +3,10 @@ import deleteIcon from '../../../../assets/images/delete.svg';
 import plusIcon from '../../../../assets/images/minus.png';
 import minusIcon from '../../../../assets/images/plus.png';
 import { IHeadPhone } from '../../../shopping-catalog/shoppingCatalog-types';
-import { useState } from 'react';
+import {useEffect, useState} from "react";
 import { Space, Spin } from 'antd';
 import './CartItem.css';
+import {useTranslation} from "react-i18next";
 
 const CartItem = ({
   id,
@@ -22,7 +23,8 @@ const CartItem = ({
   setTotalAmount,
 }: any) => {
   const [deletedItems, setDeletedItems] = useState(false);
-  console.log(numberOfItems, id);
+  const { t } = useTranslation();
+
   const deleteHandler = () => {
     setDeletedItems(true);
     const filteredCartItems = cartItems.filter((item: IHeadPhone) => item.id !== id);
@@ -37,27 +39,32 @@ const CartItem = ({
     if (numberOfItems === 0) {
       return;
     }
-    setNumberOfItems(numberOfItems - 1);
-    if (amount <= 0) {
-      return;
-    }
-    setTotalAmount(amount - Number(price));
+    setDifferentValue((cartItems: IHeadPhone[]) => {
+      return cartItems?.map((product: IHeadPhone) => {
+        if(product.id === id) {
+          return {
+            ...product,
+            count: count - 1 > 1 ? count - 1 : 1,
+            price: (count - 1 > 1 ? --count : 1) * Number(product.totalPrice)
+          }
+        }
+        return product;
+      })
+    })
   };
   const plusItemHandler = () => {
-    setNumberOfItems(numberOfItems + 1);
-    // // // return ++prev
-    // // if (id === id) {
-    // //   return ++prev
-    // // }
-    // // return prev
-    // cartItems?.map((product: any) => {
-    //   if(product.id === id) {
-    //     return ++prev;
-    //   }
-    //   return product
-    // })
-    setNumberOfItems(numberOfItems + 1);
-    setTotalAmount(amount + Number(price));
+    setDifferentValue((cartItems: IHeadPhone[]) => {
+      return cartItems?.map((product: IHeadPhone) => {
+        if(product.id === id) {
+          return {
+            ...product,
+            count: ++count,
+            price: count * Number(product.totalPrice)
+          }
+        }
+        return product;
+      })
+    })
   };
 
   return (
@@ -87,20 +94,20 @@ const CartItem = ({
           </div>
         </div>
         <div className="amount-all">
-          {/*<div className="amount">*/}
-          {/*  <div className="plus" onClick={deleteItemHandler}>*/}
-          {/*    <img src={plusIcon} width="35" height="30" alt="plus" />*/}
-          {/*  </div>*/}
-          {/*  <div className="amount-number">*/}
-          {/*    <span>{numberOfItems}</span>*/}
-          {/*  </div>*/}
-          {/*  <div*/}
-          {/*    className="minus"*/}
-          {/*    onClick={plusItemHandler}*/}
-          {/*  >*/}
-          {/*    <img src={minusIcon} width="35" height="30" alt="minus" />*/}
-          {/*  </div>*/}
-          {/*</div>*/}
+          <div className="amount">
+            <div className="plus" onClick={deleteItemHandler}>
+              <img src={plusIcon} width="35" height="30" alt="plus" />
+            </div>
+            <div className="amount-number">
+              <span>{count}</span>
+            </div>
+            <div
+              className="minus"
+              onClick={plusItemHandler}
+            >
+              <img src={minusIcon} width="35" height="30" alt="minus" />
+            </div>
+          </div>
           <div className="price price-all">
             <span>{price} ₽</span>
           </div>

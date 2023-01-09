@@ -106,7 +106,7 @@ const ShoppingCartView = ({
             <div className="button-container">
               <div className="button-text">
                 <span>{t('total')}</span>
-                <span>₽ {Math.abs(amount)}</span>
+                <span>₽ {amount.price}</span>
               </div>
               <button className="button" onClick={showModalHandler}>
                 {t('checkout')}

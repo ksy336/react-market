@@ -4,7 +4,8 @@ export interface IHeadPhone {
     title: string,
     price: string,
     rate: string,
-    count: string
+    count: string,
+    totalPrice: string
 }
 
 export interface IHeadphones {

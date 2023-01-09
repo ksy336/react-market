@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17c625c0-ee33-4a09-935a-6e93516e5a57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/headphones.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/headphones.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/components/CartItem/CartItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-cart/shoppingCart-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/components/Cards/Cards.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-catalog/shoppingCatalog-types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.fix" />
       </list>
     </recent_temporary>
@@ -101,7 +111,7 @@
       <workItem from="1672214007783" duration="6870000" />
       <workItem from="1672220944349" duration="8338000" />
       <workItem from="1672229314630" duration="25634000" />
-      <workItem from="1672823011219" duration="19942000" />
+      <workItem from="1672823011219" duration="26666000" />
     </task>
     <servers />
   </component>
@@ -117,29 +127,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="80" key="#TypeScript/0.0.1536.824@0.0.1536.824" timestamp="1672226696542" />
-    <state width="1515" height="221" key="GridCell.Tab.0.bottom" timestamp="1673204948018">
+    <state width="1515" height="221" key="GridCell.Tab.0.bottom" timestamp="1673249607885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="221" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1673204948018" />
-    <state width="1515" height="221" key="GridCell.Tab.0.center" timestamp="1673204948018">
+    <state width="1515" height="221" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1673249607885" />
+    <state width="1515" height="221" key="GridCell.Tab.0.center" timestamp="1673249607884">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="221" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1673204948018" />
-    <state width="1515" height="221" key="GridCell.Tab.0.left" timestamp="1673204948018">
+    <state width="1515" height="221" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1673249607884" />
+    <state width="1515" height="221" key="GridCell.Tab.0.left" timestamp="1673249607884">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="221" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1673204948018" />
-    <state width="1515" height="221" key="GridCell.Tab.0.right" timestamp="1673204948018">
+    <state width="1515" height="221" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1673249607884" />
+    <state width="1515" height="221" key="GridCell.Tab.0.right" timestamp="1673249607884">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="221" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1673204948018" />
+    <state width="1515" height="221" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1673249607884" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1672401460450">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1672401460450" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1673204234564">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1673251529019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1673204234563" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1673251529019" />
   </component>
 </project>

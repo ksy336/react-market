@@ -2,9 +2,9 @@ import * as React from 'react';
 import { IHeadPhone } from './Cards-types';
 import Card from '../Card/Card';
 import './Cards.css';
-import CartItem from '../../../shopping-cart/components/CartItem/CartItem';
 
-const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount, t }: any) => {
+
+const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount, itemsToLocalStorage, t }: any) => {
   return (
     <>
       <main className="wrapper main">
@@ -20,10 +20,13 @@ const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount
                 img={item?.img}
                 title={item?.title}
                 price={item?.price}
+                totalPrice={item?.totalPrice}
                 rate={item?.rate}
+                count={item?.count}
                 setItemsToLocalStorage={setItemsToLocalStorage}
                 totalAmount={totalAmount}
                 setTotalAmount={setTotalAmount}
+                itemsToLocalStorage={itemsToLocalStorage}
               />
             );
           })}
@@ -42,6 +45,8 @@ const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount
                 price={item?.price}
                 rate={item?.rate}
                 count={item?.count}
+                totalPrice={item?.totalPrice}
+                itemsToLocalStorage={itemsToLocalStorage}
                 setItemsToLocalStorage={setItemsToLocalStorage}
                 totalAmount={totalAmount}
                 setTotalAmount={setTotalAmount}

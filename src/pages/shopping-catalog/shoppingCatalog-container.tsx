@@ -5,8 +5,7 @@ import { useState } from 'react';
 import './shoppingCatalog.css';
 import { useTranslation } from 'react-i18next';
 
-const ShoppingCatalogContainer = ({ itemsToLocalStorage, setItemsToLocalStorage, totalAmount, setTotalAmount }: any) => {
-  const [headphones] = useState(data);
+const ShoppingCatalogContainer = ({ itemsToLocalStorage, headphones, setItemsToLocalStorage, totalAmount, setTotalAmount }: any) => {
   const { t } = useTranslation();
   return (
     <ShoppingCatalogView

@@ -6,17 +6,20 @@ import { addItems, updateTotalAmount, getSingleCartItem } from '../../../../stor
 import openNotification from '../../../../helpers/notification';
 import './Card.css';
 import { useTranslation } from 'react-i18next';
-import CartItem from '../../../shopping-cart/components/CartItem/CartItem';
 
-const Card = ({ id, price, img, rate, title, count, setItemsToLocalStorage, totalAmount, setTotalAmount }: any) => {
+
+const Card = ({ id, price, img, rate, title, totalPrice, count, setItemsToLocalStorage, itemsToLocalStorage, totalAmount, setTotalAmount }: any) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const addItem = () => {
-    dispatch(addItems({ id, price, img, rate, title }));
-    setItemsToLocalStorage((prev: any) => [...prev, { id, price, img, rate, title }]);
+    dispatch(addItems({ id, price, img, rate, title, count, totalPrice }));
+    setItemsToLocalStorage((prev: any) => [...prev, { id, price, img, rate, title, count, totalPrice }]);
     dispatch(updateTotalAmount(price));
-    setTotalAmount((prev: number) => (totalAmount = prev + Number(price)));
+    //
+    // setTotalAmount({
+    //   price: itemsToLocalStorage.reduce((prev: any, curr: any) => prev + curr.price, 0)
+    // })
     try {
       openNotification('bottomRight', 'success', 'Товар добавлен в корзину');
     } catch (e) {
@@ -25,7 +28,7 @@ const Card = ({ id, price, img, rate, title, count, setItemsToLocalStorage, tota
   };
   const getSingleCart = () => {
     localStorage.setItem('cartId', String(id));
-    dispatch(getSingleCartItem({ id, price, img, rate, title }));
+    dispatch(getSingleCartItem({ id, price, img, rate, title, count, totalPrice }));
     navigate('/single-cart', { replace: true });
   };
   return (
