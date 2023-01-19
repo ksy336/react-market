@@ -84,12 +84,9 @@ const ShoppingCartView = ({
               return (
                 <CartItem
                   key={item.id}
+                  item={item}
                   id={item.id}
-                  img={item.img}
-                  title={item.title}
                   price={item.price}
-                  rate={item.rate}
-                  count={item.count}
                   cartItems={cartItems}
                   amount={amount}
                   setDifferentValue={setDifferentValue}

@@ -1,24 +1,21 @@
 import * as React from 'react';
+import {useState} from "react";
 import deleteIcon from '../../../../assets/images/delete.svg';
 import plusIcon from '../../../../assets/images/minus.png';
 import minusIcon from '../../../../assets/images/plus.png';
 import { IHeadPhone } from '../../../shopping-catalog/shoppingCatalog-types';
-import {useEffect, useState} from "react";
 import { Space, Spin } from 'antd';
 import './CartItem.css';
 import {useTranslation} from "react-i18next";
 
 const CartItem = ({
+  item,
   id,
-  img,
-  title,
-  price,
   cartItems,
+  price,
   amount,
-  count,
   setDifferentValue,
   numberOfItems,
-  setNumberOfItems,
   setDifferentNumber,
   setTotalAmount,
 }: any) => {
@@ -31,7 +28,7 @@ const CartItem = ({
     setDifferentValue(filteredCartItems);
     const changedAmount = amount <= 0 ? 0 : amount - Number(price);
     console.log(changedAmount);
-    setTotalAmount(changedAmount);
+    // setTotalAmount(changedAmount);
     setDeletedItems(false);
     setDifferentNumber(1);
   };
@@ -44,8 +41,8 @@ const CartItem = ({
         if(product.id === id) {
           return {
             ...product,
-            count: count - 1 > 1 ? count - 1 : 1,
-            price: (count - 1 > 1 ? --count : 1) * Number(product.totalPrice)
+            count: item.count - 1 > 1 ? item.count - 1 : 1,
+            totalPrice: (item.count - 1 > 1 ? --item.count : 1) * Number(product.price)
           }
         }
         return product;
@@ -58,8 +55,8 @@ const CartItem = ({
         if(product.id === id) {
           return {
             ...product,
-            count: ++count,
-            price: count * Number(product.totalPrice)
+            count: ++item.count,
+            totalPrice: item.count * Number(product.price)
           }
         }
         return product;
@@ -81,12 +78,12 @@ const CartItem = ({
       <div className="cart-content">
         <div className="cart-first">
           <div className="image">
-            <img src={`${img}`} alt="it is a headphones image" />
+            <img src={`${item.img}`} alt="it is a headphones image" />
           </div>
           <div className="title title-cart">
-            <span>{title}</span>
+            <span>{item.title}</span>
             <div className="price">
-              <span className="price-grey">{price} ₽</span>
+              <span className="price-grey">{item.price} ₽</span>
             </div>
           </div>
           <div className="delete-icon" onClick={deleteHandler}>
@@ -99,7 +96,7 @@ const CartItem = ({
               <img src={plusIcon} width="35" height="30" alt="plus" />
             </div>
             <div className="amount-number">
-              <span>{count}</span>
+              <span>{item.count}</span>
             </div>
             <div
               className="minus"
@@ -109,7 +106,7 @@ const CartItem = ({
             </div>
           </div>
           <div className="price price-all">
-            <span>{price} ₽</span>
+            <span>{item.totalPrice} ₽</span>
           </div>
         </div>
       </div>

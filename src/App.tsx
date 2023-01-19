@@ -12,16 +12,14 @@ import './App.css';
 
 
 function App() {
-  const [itemsToLocalStorage, setItemsToLocalStorage, setDifferentValue, remove] = useLocalStorage('items', []);
-  const [totalAmount, setTotalAmount, setDifferentAmount] = useLocalStorage('totalAmount',
-    {
-      price: itemsToLocalStorage.reduce((prev: any, curr: any) => prev + curr.price, 0)
-    });
+  const [itemsToLocalStorage, setItemsToLocalStorage, setDifferentValue] = useLocalStorage('items', []);
+  const [totalAmount, setTotalAmount, setDifferentAmount] = useLocalStorage('totalAmount', {});
   useEffect(() => {
-    setTotalAmount(() => itemsToLocalStorage.reduce((prev: any, curr: any) => prev + curr.price), 0);
+    setTotalAmount({
+      price: itemsToLocalStorage.reduce((prev: any, curr: any) => prev + +curr.totalPrice, 0)
+    });
 
   }, [itemsToLocalStorage]);
-  console.log(totalAmount)
   const [numberOfItems, setNumberOfItems, setDifferentNumber] = useLocalStorage('number', 1);
   const [headphones] = useState(data);
   return (
