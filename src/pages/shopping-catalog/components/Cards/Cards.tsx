@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 import './Cards.css';
 
 
-const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount, itemsToLocalStorage, t }: any) => {
+const Cards = ({ headphones, setItemsToLocalStorage, itemsToLocalStorage, t }: any) => {
   return (
     <>
       <main className="wrapper main">
@@ -24,8 +24,6 @@ const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount
                 rate={item?.rate}
                 count={item?.count}
                 setItemsToLocalStorage={setItemsToLocalStorage}
-                totalAmount={totalAmount}
-                setTotalAmount={setTotalAmount}
                 itemsToLocalStorage={itemsToLocalStorage}
               />
             );
@@ -48,8 +46,6 @@ const Cards = ({ headphones, setItemsToLocalStorage, totalAmount, setTotalAmount
                 totalPrice={item?.totalPrice}
                 itemsToLocalStorage={itemsToLocalStorage}
                 setItemsToLocalStorage={setItemsToLocalStorage}
-                totalAmount={totalAmount}
-                setTotalAmount={setTotalAmount}
               />
             );
           })}

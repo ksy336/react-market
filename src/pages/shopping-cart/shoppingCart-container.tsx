@@ -7,9 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 const ShoppingCartContainer = ({
   itemsToLocalStorage,
-  totalAmount,
   setDifferentValue,
-  setDifferentAmount,
   numberOfItems,
   setNumberOfItems,
   setDifferentNumber,
@@ -44,9 +42,7 @@ const ShoppingCartContainer = ({
   return (
     <ShoppingCartView
       cartItems={itemsToLocalStorage}
-      amount={totalAmount}
       setDifferentValue={setDifferentValue}
-      setDifferentAmount={setDifferentAmount}
       setNumberOfItems={setNumberOfItems}
       numberOfItems={numberOfItems}
       setDifferentNumber={setDifferentNumber}

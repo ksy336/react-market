@@ -13,11 +13,9 @@ const CartItem = ({
   id,
   cartItems,
   price,
-  amount,
   setDifferentValue,
   numberOfItems,
-  setDifferentNumber,
-  setTotalAmount,
+  setDifferentNumber
 }: any) => {
   const [deletedItems, setDeletedItems] = useState(false);
   const { t } = useTranslation();
@@ -26,9 +24,6 @@ const CartItem = ({
     setDeletedItems(true);
     const filteredCartItems = cartItems.filter((item: IHeadPhone) => item.id !== id);
     setDifferentValue(filteredCartItems);
-    const changedAmount = amount <= 0 ? 0 : amount - Number(price);
-    console.log(changedAmount);
-    // setTotalAmount(changedAmount);
     setDeletedItems(false);
     setDifferentNumber(1);
   };

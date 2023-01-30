@@ -8,7 +8,7 @@ import './Card.css';
 import { useTranslation } from 'react-i18next';
 
 
-const Card = ({ id, price, img, rate, title, totalPrice, count, setItemsToLocalStorage, itemsToLocalStorage, totalAmount, setTotalAmount }: any) => {
+const Card = ({ id, price, img, rate, title, totalPrice, count, setItemsToLocalStorage, itemsToLocalStorage }: any) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { t } = useTranslation();
@@ -16,10 +16,6 @@ const Card = ({ id, price, img, rate, title, totalPrice, count, setItemsToLocalS
     dispatch(addItems({ id, price, img, rate, title, count, totalPrice }));
     setItemsToLocalStorage((prev: any) => [...prev, { id, price, img, rate, title, count, totalPrice }]);
     dispatch(updateTotalAmount(price));
-    //
-    // setTotalAmount({
-    //   price: itemsToLocalStorage.reduce((prev: any, curr: any) => prev + curr.price, 0)
-    // })
     try {
       openNotification('bottomRight', 'success', 'Товар добавлен в корзину');
     } catch (e) {

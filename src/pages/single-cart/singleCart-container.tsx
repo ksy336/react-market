@@ -1,7 +1,6 @@
 import * as React from 'react';
 import SingleCartView from './singleCart-view';
 import './singleCart.css';
-import useLocalStorage from '../../hooks/useLocalStorage';
 import { useTranslation } from 'react-i18next';
 
 const SingleCartContainer = ({ itemsToLocalStorage, setItemsToLocalStorage }: any) => {

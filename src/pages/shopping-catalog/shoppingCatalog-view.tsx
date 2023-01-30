@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import Cards from './components/Cards/Cards';
 import Footer from '../../components/Footer/Footer';
 
-const ShoppingCatalogView = ({ headphones, setItemsToLocalStorage, itemsToLocalStorage, totalAmount, setTotalAmount, t }: any) => {
+const ShoppingCatalogView = ({ headphones, setItemsToLocalStorage, itemsToLocalStorage, t }: any) => {
   return (
     <>
       <Header itemsToLocalStorage={itemsToLocalStorage} />
@@ -11,8 +11,6 @@ const ShoppingCatalogView = ({ headphones, setItemsToLocalStorage, itemsToLocalS
         headphones={headphones}
         itemsToLocalStorage={itemsToLocalStorage}
         setItemsToLocalStorage={setItemsToLocalStorage}
-        totalAmount={totalAmount}
-        setTotalAmount={setTotalAmount}
         t={t}
       />
       <Footer />

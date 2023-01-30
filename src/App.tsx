@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useEffect, useMemo, useState} from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NoFoundPage from './pages/nofound';
 import ShoppingCatalogPage from './pages/shopping-catalog';
@@ -6,20 +7,12 @@ import SingleCart from './pages/single-cart';
 import ShoppingCartPage from './pages/shopping-cart';
 import useLocalStorage from './hooks/useLocalStorage';
 import '../src/i18n/index';
-import {useEffect, useState} from "react";
 import data from "./headphones.json";
 import './App.css';
 
 
 function App() {
   const [itemsToLocalStorage, setItemsToLocalStorage, setDifferentValue] = useLocalStorage('items', []);
-  const [totalAmount, setTotalAmount, setDifferentAmount] = useLocalStorage('totalAmount', {});
-  useEffect(() => {
-    setTotalAmount({
-      price: itemsToLocalStorage.reduce((prev: any, curr: any) => prev + +curr.totalPrice, 0)
-    });
-
-  }, [itemsToLocalStorage]);
   const [numberOfItems, setNumberOfItems, setDifferentNumber] = useLocalStorage('number', 1);
   const [headphones] = useState(data);
   return (
@@ -29,8 +22,6 @@ function App() {
           path="/"
           element={
             <ShoppingCatalogPage
-              totalAmount={totalAmount}
-              setTotalAmount={setTotalAmount}
               itemsToLocalStorage={itemsToLocalStorage}
               setItemsToLocalStorage={setItemsToLocalStorage}
               headphones={headphones}
@@ -42,11 +33,8 @@ function App() {
           element={
             <ShoppingCartPage
               setDifferentValue={setDifferentValue}
-              totalAmount={totalAmount}
-              setTotalAmount={setTotalAmount}
               itemsToLocalStorage={itemsToLocalStorage}
               setItemsToLocalStorage={setItemsToLocalStorage}
-              setDifferentAmount={setDifferentAmount}
               numberOfItems={numberOfItems}
               setNumberOfItems={setNumberOfItems}
               setDifferentNumber={setDifferentNumber}

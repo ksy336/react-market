@@ -5,12 +5,10 @@ import { useState } from 'react';
 import './shoppingCatalog.css';
 import { useTranslation } from 'react-i18next';
 
-const ShoppingCatalogContainer = ({ itemsToLocalStorage, headphones, setItemsToLocalStorage, totalAmount, setTotalAmount }: any) => {
+const ShoppingCatalogContainer = ({ itemsToLocalStorage, headphones, setItemsToLocalStorage }: any) => {
   const { t } = useTranslation();
   return (
     <ShoppingCatalogView
-      totalAmount={totalAmount}
-      setTotalAmount={setTotalAmount}
       itemsToLocalStorage={itemsToLocalStorage}
       setItemsToLocalStorage={setItemsToLocalStorage}
       headphones={headphones}

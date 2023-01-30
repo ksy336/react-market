@@ -9,12 +9,11 @@ import { Input } from 'antd';
 import { UserOutlined, PhoneOutlined } from '@ant-design/icons';
 import './shoppingCart.css';
 import Button from '../../components/Button/Button';
+import {useMemo} from "react";
 
 const ShoppingCartView = ({
   cartItems,
-  amount,
   setDifferentValue,
-  setDifferentAmount,
   numberOfItems,
   setNumberOfItems,
   setDifferentNumber,
@@ -30,6 +29,7 @@ const ShoppingCartView = ({
   setPhone,
   t,
 }: any) => {
+  const totalPrice = useMemo(() => cartItems.reduce((prev: any, curr: any) => prev + +curr.totalPrice, 0), [cartItems])
   return (
     <>
       {showModal && (
@@ -88,9 +88,7 @@ const ShoppingCartView = ({
                   id={item.id}
                   price={item.price}
                   cartItems={cartItems}
-                  amount={amount}
                   setDifferentValue={setDifferentValue}
-                  setDifferentAmount={setDifferentAmount}
                   setNumberOfItems={setNumberOfItems}
                   numberOfItems={numberOfItems}
                   setDifferentNumber={setDifferentNumber}
@@ -103,7 +101,7 @@ const ShoppingCartView = ({
             <div className="button-container">
               <div className="button-text">
                 <span>{t('total')}</span>
-                <span>₽ {amount.price}</span>
+                <span>₽ {totalPrice}</span>
               </div>
               <button className="button" onClick={showModalHandler}>
                 {t('checkout')}
